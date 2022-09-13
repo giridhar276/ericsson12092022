@@ -1,0 +1,426 @@
+*** Everything in python is Object ****
+*** Every object contains methods ***
+
+number
+---------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 3.43
+
+
+
+
+string
+--------
+string is defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "unix shell"
+cname = """java programming"""
+
+
+
+list ( array in C)(mutable)
+-------
+list contains set of elements.
+Elements can be numbers or strings or any combination.
+list elements are defined in [].
+
+
+alist = [10,20,30]
+blist = ["unix",20,34.32]
+
+
+
+tuple  ( immutable , unchangeable , uneditable )
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination.
+tuple elements are defined in ().
+*** Elements inside tuple cannot be modified DIRECLY***
+
+
+atup = (10,2,3,0,"unix")
+
+
+
+dictionary  ( json file , hashmap in java, hash in perl )
+---------------
+dictionary contains elements in key-value pairs.
+dictionary is defined in {}.
+
+
+syntax:  object = {key:value , key :value , key:value }
+example:   book = {"chap1":10 ,"chap2":20 ,"chap3":30 }
+
+
+
+set
+-----
+set is UNORDERED collection of UNIQUE values of the same type.
+
+data = {10,10,10,20,30,30}
+
+
+
+
+
+
+single line comment
+--------------------
+# this is the single line comment
+
+
+multi line comment
+------------------
+
+'''
+these lines are treated
+as multi line comment
+'''
+
+"""
+these lines are treated
+as multi line comment
+"""
+
+
+
+
+level1
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+    level2
+level1
+level1
+level1
+
+#####################################
+level1
+level1
+if cond:
+    level2
+    level2
+else:
+    level2
+    level2
+    level2
+level1
+level1
+
+
+
+
+
+classification of objects
+------------------------
+
+
+mutable objects
+----------------
+list
+dictionary
+set
+
+immutable objects
+-----------------
+string
+tuple
+number
+
+
+
+function | module | subroutine | defintion
+------------------------------------------
+- resusability
+- define the block once and call it for multiple times
+
+
+
+builtin functions    dir(__builtin__)
+-------------------
+
+print()
+range()
+len()
+help()
+dir()
+input() : read the input from the keyboard
+type()
+round()
+isinstance()
+max()
+min()
+sum()
+
+
+
+
+list()
+tuple()
+int()
+float()
+oct()
+str()
+dict()
+set()
+
+
+
+
+
+
+
+
+
+
+working with flat files ( .csv .conf .log .txt .properties .dat .tsv   ... )
+---------------------------------------
+
+read mode     r mode
+write mode    w mode
+append mode   a mode
+
+opening the file
+---------------------
+syntax :     object = open(filename,mode)
+example:       fr = open("customers.txt","r")
+               *** The file should exist in order to read the file ****
+
+               fw = open("customers.txt","w")
+               case1: If the file is already existing .. it overwrites the existing content before writing
+               case2: If the file is not existing ...... file will be created
+
+               fa = open("customers.txt","a")
+               case1: If the file is already existing .. it appends the new data at the end of the file
+               case2: If the file is not existing ...... file will be created first
+
+
+
+
+
+closing the file
+--------------
+fobj.close()
+
+
+
+read operation
+------------------
+
+
+- reading the file line by line using file object
+- fobj.readlines()
+- fobj.read()
+- using csv library
+- using pandas library
+
+
+
+operators
+-----------
+
+arithmetic operators :  + - * %  /
+
+
+relational operators :   < <= > >= == !=
+
+logical operators :   and    or   not
+
+name = 'python'
+if len(name) == 6  and name.islower():
+    ## do something
+
+
+
+if len(name) == 6  or name.islower():
+    # do something
+
+assignment operators ( ++ and -- are not allowed in python )
+----------------------
+
+
+val = 10
+val = val + 1   (or)  val+=1
+val = val -1    (or)  val-=1
+val = val * 1   (or)  val*=1
+
+
+special operators
+=================
+in
+as
++
+*
+
+
+
+
+if 'prog' in 'python programming':
+    # do something
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+working with third party files ( docx xlsx pdf mp4 ..... )
+---------------------------------------
+
+
+
+
+
+
+
+
+
+exception handling
+----------------------
+There are 2 types of errors.
+
+-syntax error
+-semantic error or runtime error or logical errors
+
+
+Handling the errors in the runtime is known as exception handling.
+
+try
+except
+else
+finally
+raise
+
+
+
+library | package | module | routine 
+-----------------------------------
+-Every library contains set of methods
+-mainly used for code reusability
+
+builtin libraries
+---------------------
+Builtin libraries are generally used by everyone(math operations , mail operations , string manipulations .. OS operations , system level operations , platform details )  and all the builtin libraries are installed with the python.
+
+
+third party libraries
+---------------------
+Depending on the requirement( DB related, cloud libraries, ML , analytics ,image processing ), developer has to install the third party library from
+
+- using pip tool
+- downloading the library manually from www.pypi.org and installing it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
